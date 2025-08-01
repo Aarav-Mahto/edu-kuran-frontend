@@ -8,7 +8,7 @@ type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 const TempNavigation = () => {
     const navigation = useNavigation<NavigationProp>();
     return (
-        <View className="w-2/3 mx-auto my-[10%] flex flex-col justify-center items-center gap-3">
+        <View className="w-2/3 mt-5 mx-auto my-[10%] flex flex-col justify-center items-center gap-3">
             <Text className="">This is temporary routing just for testing different pages</Text>
 
             <TouchableOpacity
