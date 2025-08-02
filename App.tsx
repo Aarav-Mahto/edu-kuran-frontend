@@ -11,6 +11,7 @@ import {
   SafeAreaInsetsContext,
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
+import TabNavigator from '~/pages/Tabs/TabNavigator';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -18,10 +19,8 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="abc">
-          <Stack.Screen name="abc" component={TempNavigation} options={{ headerShown: false }} />
-          <Stack.Screen name="Home" component={HeroPage} options={{ headerShown: false }} />
-          <Stack.Screen name="Details" component={HeroPage} options={{ headerShown: false }} />
+        <Stack.Navigator initialRouteName="Tabs">
+          <Stack.Screen name="Tabs" component={TabNavigator} options={{ headerShown: false }} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
