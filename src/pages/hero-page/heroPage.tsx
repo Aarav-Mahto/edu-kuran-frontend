@@ -11,7 +11,7 @@ const HeroPage = () => {
 
   return (
     <>
-        <View className="flex-1">
+        <View className="">
           <Header onSelectItem={handleItemClick} />
           <SubHeader />
           {/* Your homepage content */}
