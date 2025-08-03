@@ -1,11 +1,12 @@
 import React from 'react'
-import { Text, View } from "react-native";
+import { SafeAreaView, Text, View } from "react-native";
+import HeroPage from '../hero-page/heroPage';
 
 const HomeScreen = () => {
   return (
-    <View>
-        <Text>Home Screen</Text>
-    </View>
+    <SafeAreaView>
+      <HeroPage />
+    </SafeAreaView>
   )
 }
 
