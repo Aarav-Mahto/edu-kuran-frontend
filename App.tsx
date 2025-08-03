@@ -1,9 +1,7 @@
 
-import HeroPage from '~/pages/hero-page/heroPage';
 import './global.css';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import TempNavigation from '~/pages/hero-page/tempNavigation';
 import { RootStackParamList } from '~/types/navigation';
 import {
   SafeAreaView,
@@ -16,7 +14,7 @@ import TabNavigator from '~/pages/Tabs/TabNavigator';
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export default function App() {
-  return (
+  return ( 
     <SafeAreaProvider>
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Tabs">
