@@ -3,5 +3,6 @@ export type RootStackParamList = {
     Home: undefined;
     Details: undefined;
     Tabs: undefined;
+    MyCourses: undefined;
     //Details: { id: number }; //It say your Details screen should receive an id
 };

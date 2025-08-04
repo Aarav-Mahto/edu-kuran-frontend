@@ -41,7 +41,7 @@ const CustomTabBar = ({ state, descriptors, navigation }: BottomTabBarProps) => 
   const search = getTabProps("Search");
   const home = getTabProps("Home");
   const message = getTabProps("Message");
-  const profile = getTabProps("Profile");
+  const profile = getTabProps("Dashboard");
 
   return (
     <View
