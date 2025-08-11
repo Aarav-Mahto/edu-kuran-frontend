@@ -12,7 +12,9 @@ import { useWindowDimensions } from 'react-native';
 const tutors = [
   {
     name: "Aarav Mahto",
-    subject: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi non consectetur pariatur! Eaque reprehenderit vitae iusto? Ratione, quasi ut! Sapiente, dignissimos facilis consequuntur pariatur velit, dolorem fuga harum autem consequatur numquam, vel ducimus optio quasi nemo eius explicabo laboriosam! Illum doloribus a dignissimos aperiam, sint molestiae doloremque similique nobis ex.",
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi non consectetur pariatur! Eaque reprehenderit vitae iusto? Ratione, quasi ut! Sapiente, dignissimos facilis consequuntur pariatur velit, dolorem fuga harum autem consequatur numquam, vel ducimus optio quasi nemo eius explicabo laboriosam! Illum doloribus a dignissimos aperiam, sint molestiae doloremque similique nobis ex.",
+    level: "Level 2★",
+    totalRatings: 120,
     hourlyRate: 30,
     country: "India",
     rating: 4.9,
@@ -20,12 +22,24 @@ const tutors = [
   },
   {
     name: "Emma Watson",
-    subject: "IELTS Speaking Expert",
+    bio: "IELTS Speaking Expert",
+    level: "Level 1★",
+    totalRatings: 100,
     hourlyRate: 22,
     country: "UK",
     rating: 5.0,
     profileImage: "https://randomuser.me/api/portraits/women/65.jpg",
   },
+];
+const Teaches = [
+  { id: 1, subject: "Tajweed" },
+  { id: 2, subject: "Recitation" },
+  { id: 3, subject: "Hifz" },
+  { id: 4, subject: "Arabic" },
+  { id: 5, subject: "Islamic Studies" },
+  { id: 6, subject: "Prophet’s Life" },
+  { id: 7, subject: "Companion’s Life" },
+  { id: 8, subject: "Women Seerah " },
 ];
 
 const HeroPage = () => {
@@ -85,11 +99,13 @@ const HeroPage = () => {
           <TutorCard
             key={index}
             {...tutor}
+            Teaches={Teaches}
             onPressDetails={() => Alert.alert("Gig", `Clicked card of ${tutor.name}`)}
             onPressProfile={() => Alert.alert("Profile", `Viewing profile of ${tutor.name}`)}
           />
         ))}
         <View className="mb-80">
+          
           {richText ? (
             <RenderHtml
               contentWidth={width}
