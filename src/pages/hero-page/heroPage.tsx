@@ -8,6 +8,8 @@ import TutsCard from "~/components/offer-cards/tuts-card";
 import TempScreen from "~/components/ui/RichTextEditor";
 import RenderHtml from 'react-native-render-html';
 import { useWindowDimensions } from 'react-native';
+import CourseFeature from "~/components/offer-cards/CourseFeature";
+import EachCourseCard from "~/components/offer-cards/EachCourseCard";
 
 const tutors = [
   {
@@ -59,6 +61,13 @@ const HeroPage = () => {
         <SubHeader />
         <HeroBanner />
         {/* Your homepage content */}
+        <View className="p-2 mt-3">
+          <CourseFeature />
+        </View>
+        <View className="p-2">
+          <EachCourseCard />
+        </View>
+        
 
         <TutsCard
           image={null}//={require('../../assets/banner/banner1.webp')}
