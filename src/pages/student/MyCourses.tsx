@@ -101,7 +101,7 @@ const MyCourses = () => {
       </Modal>
 
       {/* Course List */}
-      <FlatList
+      <FlatList scrollEnabled={false}
         data={courses}
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => (

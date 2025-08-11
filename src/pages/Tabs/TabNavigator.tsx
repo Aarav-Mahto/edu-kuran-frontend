@@ -2,7 +2,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Message from "./Message";
 import Search from "./Search";
 import Saved from "./Saved";
-import Profile from "./Dashboard";
+import Dashboard from "./Dashboard";
 import CustomTabBar from "~/components/common/CustomTabBar";
 import HomeScreen from "./HomeScreen";
 
@@ -21,7 +21,7 @@ const TabNavigator = () => {
       <Tab.Screen name="Search" component={Search} />
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Message" component={Message} />
-      <Tab.Screen name="Dashboard" component={Profile} />
+      <Tab.Screen name="Dashboard" component={Dashboard} />
     </Tab.Navigator>
   );
 };

@@ -52,7 +52,7 @@ const CustomTabBar = ({ state, descriptors, navigation }: BottomTabBarProps) => 
       <TabBtn {...search} iconName="search" IconSet={Icon} />
       <TabBtn {...home} iconName="home-outline" IconSet={Icon} />
       <TabBtn {...message} iconName="chatbox-ellipses-outline" IconSet={Icon} />
-      <TabBtn {...profile} iconName="account-circle" IconSet={MaterialCommunityIcons} />
+      <TabBtn {...profile} iconName="view-dashboard" IconSet={MaterialCommunityIcons} />
     </View>
   );
 };

@@ -6,7 +6,12 @@ import { RootStackParamList } from '~/types/navigation';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import TabNavigator from '~/pages/Tabs/TabNavigator';
 import MyCourses from '~/pages/student/MyCourses';
-import { options } from 'node_modules/axios/index.cjs';
+import ProfileScreen from '~/pages/student/Profile';
+import Support from '~/pages/student/Support';
+import Settings from '~/pages/student/Settings';
+import Saved from '~/pages/Tabs/Saved';
+import Dashboard from '~/pages/Tabs/Dashboard';
+import EditProfile from '~/pages/student/EditProfile';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -17,6 +22,12 @@ export default function App() {
         <NavigationContainer>
           <Stack.Navigator initialRouteName="Tabs">
             <Stack.Screen name="Tabs" component={TabNavigator} options={{ headerShown: false }} />
+            <Stack.Screen name='Profile' component={ProfileScreen} options={{ headerShown: false}} />
+            <Stack.Screen name='Support' component={Support} options={{ headerShown: false}} />
+            <Stack.Screen name="Settings" component={Settings} options={{ headerShown: false}} />
+            <Stack.Screen name='Saved' component={Saved} options={{ headerShown: false}} />
+            <Stack.Screen name='Dashboard' component={Dashboard} options={{ headerShown: false}} />
+            <Stack.Screen name='EditProfile' component={EditProfile} options={{ headerShown: false}} />
           </Stack.Navigator>
         </NavigationContainer>
       </SafeAreaProvider>
