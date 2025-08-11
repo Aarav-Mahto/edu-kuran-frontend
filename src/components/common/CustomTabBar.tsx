@@ -3,7 +3,7 @@ import { TouchableOpacity, View, Text } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import type { BottomTabBarProps } from "@react-navigation/bottom-tabs";
 import Icon from "react-native-vector-icons/Ionicons";
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 const CustomTabBar = ({ state, descriptors, navigation }: BottomTabBarProps) => {
   const insets = useSafeAreaInsets();
@@ -41,7 +41,7 @@ const CustomTabBar = ({ state, descriptors, navigation }: BottomTabBarProps) => 
   const search = getTabProps("Search");
   const home = getTabProps("Home");
   const message = getTabProps("Message");
-  const profile = getTabProps("Profile");
+  const dashboard = getTabProps("Dashboard"); 
 
   return (
     <View
@@ -52,7 +52,7 @@ const CustomTabBar = ({ state, descriptors, navigation }: BottomTabBarProps) => 
       <TabBtn {...search} iconName="search" IconSet={Icon} />
       <TabBtn {...home} iconName="home-outline" IconSet={Icon} />
       <TabBtn {...message} iconName="chatbox-ellipses-outline" IconSet={Icon} />
-      <TabBtn {...profile} iconName="account-circle" IconSet={MaterialCommunityIcons} />
+      <TabBtn {...dashboard} iconName="dashboard" IconSet={MaterialIcons} />
     </View>
   );
 };
