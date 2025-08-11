@@ -2,9 +2,9 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Message from "./Message";
 import Search from "./Search";
 import Saved from "./Saved";
-import Dashboard from "./Dashboard";
 import CustomTabBar from "~/components/common/CustomTabBar";
 import HomeScreen from "./HomeScreen";
+import Dashboard from "./Dashboard";
 
 const Tab = createBottomTabNavigator();
 

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, ScrollView, Modal, Pressable, Image } from 'react-native';
 import { Ionicons, Feather } from '@expo/vector-icons';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ScheduleCard from '~/pages/student/ScheduleCard';
 import MyCourses from '../student/MyCourses';

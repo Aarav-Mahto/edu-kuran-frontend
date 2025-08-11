@@ -15,5 +15,6 @@ export type RootStackParamList = {
         educationInfo: any,
         onSave: (updatedProfile: any, updatedLangInfo: any, updatedEducation: any) => void,
     };
+    AllCourses: undefined;
     //Details: { id: number }; //It say your Details screen should receive an id
 };

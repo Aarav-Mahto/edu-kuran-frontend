@@ -12,6 +12,7 @@ import Settings from '~/pages/student/Settings';
 import Saved from '~/pages/Tabs/Saved';
 import Dashboard from '~/pages/Tabs/Dashboard';
 import EditProfile from '~/pages/student/EditProfile';
+import AllCourses from '~/pages/AllCourses/AllCourses';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -28,6 +29,7 @@ export default function App() {
             <Stack.Screen name='Saved' component={Saved} options={{ headerShown: false}} />
             <Stack.Screen name='Dashboard' component={Dashboard} options={{ headerShown: false}} />
             <Stack.Screen name='EditProfile' component={EditProfile} options={{ headerShown: false}} />
+            <Stack.Screen name="AllCourses" component={AllCourses} options={{ headerShown: false}} />
           </Stack.Navigator>
         </NavigationContainer>
       </SafeAreaProvider>
