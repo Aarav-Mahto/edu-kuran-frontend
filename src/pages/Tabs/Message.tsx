@@ -1,16 +1,8 @@
-import { Text, View } from "react-native";
-import { SafeAreaView } from 'react-native-safe-area-context';
+import React from 'react';
+import Chat from "../common/Chat";
 
 const Message = () => {
-  return (
-    <SafeAreaView>
-      <View>
-       <Text>
-        Message
-      </Text>
-      </View>
-    </SafeAreaView>
-  )
-}
+  return <Chat title="Messages" />;
+};
 
 export default Message;

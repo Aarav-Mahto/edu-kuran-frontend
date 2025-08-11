@@ -98,9 +98,11 @@ const TutsCard = ({
                 android_ripple={{ color: '#00000010' }}
             >
                 <Text className="text-lg font-semibold text-gray-800">{title}</Text>
-                <View className="mt-1 flex flex-row items-center justify-end">
+                <View className='flex flex-row items-center justify-end'>
+                    <View className="mt-1 flex flex-row items-center border border-teal-600 px-3 py-1">
                     <MaterialIcons name="currency-rupee" size={18} style={{ color: '#009000', fontWeight: 'bold' }} />
                     <Text className="text-md text-[#009000]">{price} / {rateType}</Text>
+                </View>
                 </View>
             </Pressable>
 
