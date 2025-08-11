@@ -1,7 +1,7 @@
 import React from 'react'
 import { View,Text, SafeAreaView } from "react-native";
 
-const Profile = () => {
+const Dashboard = () => {
   return (
     <SafeAreaView className='mt-10'>
       <View>
@@ -13,4 +13,4 @@ const Profile = () => {
   );
 }
 
-export default Profile
+export default Dashboard
