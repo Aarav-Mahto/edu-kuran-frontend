@@ -9,7 +9,12 @@ import TempScreen from "~/components/ui/RichTextEditor";
 import RenderHtml from 'react-native-render-html';
 import { useWindowDimensions } from 'react-native';
 import CourseFeature from "~/components/offer-cards/CourseFeature";
-import EachCourseCard from "~/components/offer-cards/EachCourseCard";
+import TajweedCard from "~/components/offer-cards/EachCourseGigs/TajweedGigs"
+import RecitationCard from "~/components/offer-cards/EachCourseGigs/RecitationGigs";
+import HifzCard from "~/components/offer-cards/EachCourseGigs/HifzGigs";
+import ArabicCard from "~/components/offer-cards/EachCourseGigs/ArabicGigs";
+import WhyChooseUs from "~/components/common/WhyChooseUs";
+import HowItWorks from "~/components/common/HowItWork";
 
 const tutors = [
   {
@@ -65,10 +70,17 @@ const HeroPage = () => {
           <CourseFeature />
         </View>
         <View className="p-2">
-          <EachCourseCard />
+          <TajweedCard />
+          <RecitationCard/>
+          <HifzCard />
+          <ArabicCard />
         </View>
         
+        {/* Why Us */}
+        <WhyChooseUs />
 
+        {/* How It Works */}
+        <HowItWorks />
         <TutsCard
           image={null}//={require('../../assets/banner/banner1.webp')}
           imageText="Quran Recitation with Certified Tutor, Learn Tajweed in Details With Become Expert Quran Recitation with Certified Tutor, Learn Tajweed in Details With Become Expert"

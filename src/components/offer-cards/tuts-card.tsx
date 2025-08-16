@@ -18,7 +18,7 @@ type TutsCardProps = {
     overlayText: string;
     title: string;
     price: string;
-    rateType: 'hourly' | 'weekly';
+    rateType: string;
     tutor: {
         name: string;
         avatar: any;
