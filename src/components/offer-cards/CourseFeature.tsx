@@ -84,7 +84,7 @@ export default function CourseFeature() {
         renderItem={({ item }) =>
           item.id === 'view-all' ? (
             <TouchableOpacity
-              style={{ width: cardWidth, height: cardHeight }}
+              style={{ width: cardWidth , height: cardHeight }}
               className="mx-2 items-center justify-center rounded-xl bg-gray-100 p-3 border border-gray-300 shadow-xl"
               onPress={() => navigation.navigate('AllCourses')}
             >
